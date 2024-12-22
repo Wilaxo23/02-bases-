@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AppComponent,
+    CounterComponent, // Aquí se importan los componentes standalone
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent], // El componente raíz de la aplicación
 })
-export class AppModule { }
+export class AppModule {}

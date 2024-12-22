@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { CounterComponent } from './counter/counter.component';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: false,
-  styleUrl: './app.component.css'
+  templateUrl: './app.Component.html',
+  standalone: true,
+  imports: [CounterComponent],
 })
-export class AppComponent {
-  title = 'bases';
-}
+export class AppComponent {}
