@@ -8,3 +8,5 @@ import { CounterComponent } from './counter/counter.component';
   imports: [CounterComponent],
 })
 export class AppComponent {}
+
+//checho mola mucho
